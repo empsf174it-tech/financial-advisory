@@ -122,6 +122,7 @@
 
   const navLinks = $$('.nav__link');
   const drawerLinks = $$('.drawer__link');
+  const backToTop = $('#backToTop');
   let ticking = false;
 
   function syncActiveLink() {
@@ -146,7 +147,16 @@
     drawerLinks.forEach((a) => a.classList.toggle('is-active', a.getAttribute('href') === current));
 
     nav.classList.toggle('is-stuck', window.scrollY > 8);
+    if (backToTop) {
+      backToTop.classList.toggle('is-visible', window.scrollY > 350);
+    }
     ticking = false;
+  }
+
+  if (backToTop) {
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }
 
   window.addEventListener('scroll', () => {
@@ -172,7 +182,7 @@
   const SERVICES = [
     {
       cat: 'retirement', tag: 'Retirement', icon: 'ph-hourglass-medium',
-      img: 'photo-1511895426328-dc8714191300',
+      img: 'retirement-income-01.jpg',
       imgAlt: 'A multi-generational family standing together on a beach at sunset',
       title: 'Retirement Income Design',
       blurb: 'Turning a lifetime of accumulated assets into a paycheque that survives a thirty-year retirement.',
@@ -188,7 +198,7 @@
     },
     {
       cat: 'investing', tag: 'Investing', icon: 'ph-chart-line-up',
-      img: 'photo-1460925895917-afdab827c52f',
+      img: 'portfolio-construction-01.jpg',
       imgAlt: 'A laptop displaying a portfolio performance dashboard',
       title: 'Portfolio Construction & Rebalancing',
       blurb: 'Low-cost, globally diversified portfolios built around your capacity for risk — not your appetite for it.',
@@ -204,7 +214,7 @@
     },
     {
       cat: 'tax', tag: 'Tax', icon: 'ph-receipt',
-      img: 'photo-1554224155-6726b3ff858f',
+      img: 'tax-withdrawal-01.jpg',
       imgAlt: 'Tax forms and a calculator laid out on a desk',
       title: 'Tax-Aware Withdrawal Sequencing',
       blurb: 'Deciding which account to draw from, in which year, so the tax bill is managed across decades rather than filings.',
@@ -220,7 +230,7 @@
     },
     {
       cat: 'estate', tag: 'Estate', icon: 'ph-tree-structure',
-      img: 'photo-1450101499163-c8848c66ca85',
+      img: 'estate-planning-01.jpg',
       imgAlt: 'A person signing a printed document with a fountain pen',
       title: 'Estate & Legacy Planning',
       blurb: 'Titling, beneficiaries and trust structures aligned with the outcome you actually want for the next generation.',
@@ -236,7 +246,7 @@
     },
     {
       cat: 'education', tag: 'Education', icon: 'ph-graduation-cap',
-      img: 'photo-1523240795612-9a054b0db644',
+      img: 'education-funding-01.jpg',
       imgAlt: 'Students working together over books in a college library',
       title: 'Education Funding',
       blurb: '529 plans, financial-aid positioning and the honest question of how much to fund without compromising retirement.',
@@ -252,7 +262,7 @@
     },
     {
       cat: 'investing', tag: 'Investing', icon: 'ph-chart-pie-slice',
-      img: 'photo-1552664730-d307ca884978',
+      img: 'equity-compensation-01.jpg',
       imgAlt: 'A company team working through a planning session around a boardroom table',
       title: 'Equity Compensation & RSUs',
       blurb: 'Vesting schedules, concentration risk and the tax consequences of every exercise decision, modelled before you act.',
@@ -268,7 +278,7 @@
     },
     {
       cat: 'tax', tag: 'Tax', icon: 'ph-hand-heart',
-      img: 'photo-1488521787991-ed7bbaae773c',
+      img: 'charitable-giving-01.jpg',
       imgAlt: 'Children from a community programme smiling towards the camera',
       title: 'Charitable Giving',
       blurb: 'Donor-advised funds, appreciated-security gifts and bunching strategies that make generosity more efficient.',
@@ -284,7 +294,7 @@
     },
     {
       cat: 'retirement', tag: 'Retirement', icon: 'ph-briefcase',
-      img: 'photo-1486406146926-c627a92ad1ab',
+      img: 'business-exit-01.jpg',
       imgAlt: 'Corporate towers seen looking up from street level',
       title: 'Business Exit Planning',
       blurb: 'Preparing a company — and its owner — for a sale that funds everything the next chapter requires.',
@@ -302,7 +312,7 @@
 
   const grid  = $('#serviceGrid');
   const empty = $('#serviceEmpty');
-  const IMG_BASE = 'https://images.unsplash.com/';
+  const IMG_BASE = 'assets/images/';
 
   function renderServices() {
     const fragment = document.createDocumentFragment();
@@ -315,7 +325,7 @@
       li.setAttribute('data-delay', String((i % 4) + 1));
       li.innerHTML = `
         <figure class="svc-card__media">
-          <img src="${IMG_BASE}${svc.img}?auto=format&fit=crop&w=600&q=80" alt="${svc.imgAlt}"
+          <img src="${IMG_BASE}${svc.img}" alt="${svc.imgAlt}"
                width="600" height="340" loading="lazy" decoding="async">
         </figure>
         <span class="svc-card__icon"><i class="ph ${svc.icon}" aria-hidden="true"></i></span>
@@ -366,7 +376,7 @@
     activeService = svc;
     lastFocused = document.activeElement;
 
-    modalEls.img.src = `${IMG_BASE}${svc.img}?auto=format&fit=crop&w=900&q=80`;
+    modalEls.img.src = `${IMG_BASE}${svc.img}`;
     modalEls.img.alt = svc.imgAlt;
     modalEls.cat.textContent = svc.tag;
     modalEls.title.textContent = svc.title;

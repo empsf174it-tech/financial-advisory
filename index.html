@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meridian &amp; Vale — Fee-Only Financial Advisory</title>
-<meta name="description" content="Meridian &amp; Vale is a fee-only fiduciary advisory practice offering retirement, estate, tax and education planning for families. Book a complimentary call.">
-<meta name="theme-color" content="#14322B">
-<meta property="og:title" content="Meridian &amp; Vale — Fee-Only Financial Advisory">
-<meta property="og:description" content="A fee-only fiduciary advisory practice. Retirement, estate, tax and education planning for families with a longer horizon.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://images.unsplash.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Karla:wght@300..600&display=swap" rel="stylesheet">
-<!-- Icon library: Phosphor Icons (CDN) -->
-<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meridian &amp; Vale — Fee-Only Financial Advisory</title>
+  <meta name="description"
+    content="Meridian &amp; Vale is a fee-only fiduciary advisory practice offering retirement, estate, tax and education planning for families. Book a complimentary call.">
+  <meta name="theme-color" content="#14322B">
+  <meta property="og:title" content="Meridian &amp; Vale — Fee-Only Financial Advisory">
+  <meta property="og:description"
+    content="A fee-only fiduciary advisory practice. Retirement, estate, tax and education planning for families with a longer horizon.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Karla:wght@300..600&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-<!-- GA_TAG — paste the Google Analytics 4 snippet here before launch -->
+  <!-- GA_TAG — paste the Google Analytics 4 snippet here before launch -->
 
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FinancialService",
@@ -42,690 +47,948 @@
 }
 </script>
 </head>
+
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ═══════════════ NAVBAR ═══════════════ -->
-<header class="nav" id="nav">
-  <div class="container nav__inner">
-    <a class="nav__logo" href="#home" aria-label="Meridian and Vale — back to top">
-      <span class="nav__mark" aria-hidden="true">
-        <svg viewBox="0 0 32 32" width="28" height="28" focusable="false"><path d="M4 25 L11 8 L16 19 L21 8 L28 25" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="16" cy="26.6" r="1.5" fill="currentColor"></circle></svg>
-      </span>
-      <span class="nav__word">Meridian<em>&amp;</em>Vale</span>
-    </a>
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="#home" aria-label="Meridian and Vale — back to top">
+        <span class="nav__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" focusable="false">
+            <path d="M4 25 L11 8 L16 19 L21 8 L28 25" fill="none" stroke="currentColor" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle cx="16" cy="26.6" r="1.5" fill="currentColor"></circle>
+          </svg>
+        </span>
+        <span class="nav__word">Meridian<em>&amp;</em>Vale</span>
+      </a>
 
-    <nav class="nav__links" aria-label="Section navigation">
-      <a href="#home" class="nav__link is-active" aria-current="true">Home</a>
-      <a href="#services" class="nav__link">Services</a>
-      <a href="#booking" class="nav__link">Book a Call</a>
-      <a href="#about" class="nav__link">About</a>
-      <a href="#trust" class="nav__link">Trust</a>
-      <a href="#contact" class="nav__link">Contact</a>
-    </nav>
-
-    <div class="nav__actions">
-      <button class="icon-btn theme-toggle" id="themeToggleDesktop" type="button" aria-label="Switch to dark theme" aria-pressed="false">
-        <i class="ph ph-sun theme-toggle__sun" aria-hidden="true"></i>
-        <i class="ph ph-moon theme-toggle__moon" aria-hidden="true"></i>
-      </button>
-      <a href="#booking" class="btn btn--primary nav__cta" data-cta-focus="bookName">Book a Call</a>
-      <button class="icon-btn nav__burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
-        <i class="ph ph-list" aria-hidden="true"></i>
-      </button>
-    </div>
-  </div>
-</header>
-
-<!-- ═══════════════ MOBILE DRAWER (≤1024px) ═══════════════ -->
-<div class="drawer__backdrop" id="drawerBackdrop" hidden></div>
-<aside class="drawer" id="drawer" aria-label="Mobile menu" aria-hidden="true">
-  <div class="drawer__head">
-    <span class="drawer__title">Menu</span>
-    <button class="icon-btn" id="drawerClose" type="button" aria-label="Close menu"><i class="ph ph-x" aria-hidden="true"></i></button>
-  </div>
-  <nav class="drawer__links" aria-label="Mobile section navigation">
-    <a href="#home" class="drawer__link">Home</a>
-    <a href="#services" class="drawer__link">Services</a>
-    <a href="#booking" class="drawer__link">Book a Call</a>
-    <a href="#about" class="drawer__link">About</a>
-    <a href="#trust" class="drawer__link">Trust</a>
-    <a href="#contact" class="drawer__link">Contact</a>
-  </nav>
-  <div class="drawer__foot">
-    <button class="drawer__theme theme-toggle" id="themeToggleMobile" type="button" aria-label="Switch to dark theme" aria-pressed="false">
-      <span class="drawer__theme-label"><i class="ph ph-sun theme-toggle__sun" aria-hidden="true"></i><i class="ph ph-moon theme-toggle__moon" aria-hidden="true"></i>Appearance</span>
-      <span class="drawer__theme-state" id="themeStateLabel">Light</span>
-    </button>
-    <a href="#booking" class="btn btn--primary drawer__cta" data-cta-focus="bookName">Book a Call</a>
-    <p class="drawer__note">Complimentary 30-minute introduction. No obligation.</p>
-  </div>
-</aside>
-
-<main id="main">
-
-<!-- ═══════════════ 1. HERO ═══════════════ -->
-<section class="hero" id="home" aria-label="Introduction">
-  <div class="hero__glow" aria-hidden="true"></div>
-  <div class="container hero__inner">
-    <div class="hero__copy">
-      <p class="eyebrow reveal" data-delay="1">Independent · Fee-only · Fiduciary</p>
-      <h1 class="hero__title reveal" data-delay="2">Wealth, planned on a <em>longer horizon.</em></h1>
-      <p class="hero__lede reveal" data-delay="3">Meridian &amp; Vale is a fee-only advisory practice for families and founders. We build plans people keep for decades — not portfolios they abandon in a difficult quarter.</p>
-      <div class="hero__actions reveal" data-delay="4">
-        <a href="#booking" class="btn btn--primary" data-cta-focus="bookName">Book a Call<i class="ph ph-arrow-right" aria-hidden="true"></i></a>
-        <a href="#services" class="btn btn--ghost">Explore services</a>
-      </div>
-      <dl class="hero__stats reveal" data-delay="5">
-        <div class="hero__stat"><dt>Client assets advised</dt><dd>$1.4B</dd></div>
-        <div class="hero__stat"><dt>Families served</dt><dd>480</dd></div>
-        <div class="hero__stat"><dt>Years independent</dt><dd>22</dd></div>
-      </dl>
-      <p class="hero__fineprint reveal" data-delay="5">Figures shown are illustrative placeholders for this demonstration site.</p>
-    </div>
-
-    <figure class="hero__media reveal" data-delay="4">
-      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="A planning meeting in progress, with printed portfolio reports spread across the table" width="1600" height="900" decoding="async">
-      <figcaption class="hero__badge">
-        <i class="ph ph-seal-check" aria-hidden="true"></i>
-        <span><strong>Fiduciary duty</strong>Advice owed to you, in writing.</span>
-      </figcaption>
-    </figure>
-  </div>
-
-  <!-- Trust strip — sits directly beneath the fold -->
-  <div class="container">
-    <ul class="trust-strip reveal" data-delay="6" aria-label="Regulatory and security credentials">
-      <li><i class="ph ph-certificate" aria-hidden="true"></i><span>SEC-Registered Investment Adviser <em>(placeholder)</em></span></li>
-      <li><i class="ph ph-scales" aria-hidden="true"></i><span>Fee-only — never commissions</span></li>
-      <li><i class="ph ph-user-focus" aria-hidden="true"></i><span>CFP® professional on every plan</span></li>
-      <li><i class="ph ph-vault" aria-hidden="true"></i><span>Assets held at an SIPC-member custodian</span></li>
-      <li><i class="ph ph-lock-key" aria-hidden="true"></i><span>256-bit encrypted client portal</span></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ═══════════════ 2. OFFERING HIGHLIGHTS ═══════════════ -->
-<section class="section section--approach" id="approach" aria-labelledby="approachTitle">
-  <div class="container">
-    <header class="section__head reveal">
-      <p class="eyebrow">The engagement</p>
-      <h2 class="section__title" id="approachTitle">A deliberate, four-part process</h2>
-      <p class="section__sub">Every relationship begins the same way and moves at the pace of your life — not a sales calendar. Nothing is implemented until you have seen the arithmetic behind it.</p>
-    </header>
-
-    <ol class="approach-grid">
-      <li class="a-card reveal" data-delay="1">
-        <span class="a-card__num">01</span>
-        <span class="a-card__icon"><i class="ph ph-ear" aria-hidden="true"></i></span>
-        <h3 class="a-card__title">Listen</h3>
-        <p class="a-card__text">A 90-minute discovery conversation about obligations, timelines and the things you would rather not have to think about again.</p>
-        <span class="a-card__meta">Weeks 1–2</span>
-      </li>
-      <li class="a-card reveal" data-delay="2">
-        <span class="a-card__num">02</span>
-        <span class="a-card__icon"><i class="ph ph-compass-tool" aria-hidden="true"></i></span>
-        <h3 class="a-card__title">Model</h3>
-        <p class="a-card__text">We model your plan against several decades of market history, then stress it — early retirement, long care, a lost income, a sold business.</p>
-        <span class="a-card__meta">Weeks 3–5</span>
-      </li>
-      <li class="a-card reveal" data-delay="3">
-        <span class="a-card__num">03</span>
-        <span class="a-card__icon"><i class="ph ph-blueprint" aria-hidden="true"></i></span>
-        <h3 class="a-card__title">Implement</h3>
-        <p class="a-card__text">Accounts opened at an independent custodian, portfolios funded tax-aware, documents coordinated with your attorney and CPA.</p>
-        <span class="a-card__meta">Weeks 6–9</span>
-      </li>
-      <li class="a-card reveal" data-delay="4">
-        <span class="a-card__num">04</span>
-        <span class="a-card__icon"><i class="ph ph-tree-evergreen" aria-hidden="true"></i></span>
-        <h3 class="a-card__title">Steward</h3>
-        <p class="a-card__text">Quarterly reviews, annual re-planning, and a call whenever life changes shape. Your plan is a document that keeps moving.</p>
-        <span class="a-card__meta">Ongoing</span>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- ═══════════════ 3. SERVICES (flexible — listing + detail modal) ═══════════════ -->
-<section class="section section--services" id="services" aria-labelledby="servicesTitle">
-  <div class="container">
-    <header class="section__head reveal">
-      <p class="eyebrow">Advisory services</p>
-      <h2 class="section__title" id="servicesTitle">Planning, in the areas that compound</h2>
-      <p class="section__sub">Eight disciplines, delivered by the same team under one flat or asset-based fee. Filter by the question you are trying to answer, then open a service for its approach, credentials and pricing.</p>
-    </header>
-
-    <div class="filters reveal" role="group" aria-label="Filter services by planning area">
-      <button class="filter is-active" type="button" data-filter="all">All <span class="filter__count">8</span></button>
-      <button class="filter" type="button" data-filter="retirement">Retirement <span class="filter__count">2</span></button>
-      <button class="filter" type="button" data-filter="investing">Investing <span class="filter__count">2</span></button>
-      <button class="filter" type="button" data-filter="tax">Tax <span class="filter__count">2</span></button>
-      <button class="filter" type="button" data-filter="estate">Estate <span class="filter__count">1</span></button>
-      <button class="filter" type="button" data-filter="education">Education <span class="filter__count">1</span></button>
-    </div>
-
-    <ul class="svc-grid" id="serviceGrid" aria-live="polite"></ul>
-    <p class="svc-empty" id="serviceEmpty" hidden>No services match that filter.</p>
-  </div>
-</section>
-
-<!-- ═══════════════ 4. PLANNER (flexible — calculator/tools) ═══════════════ -->
-<section class="section section--planner" id="planner" aria-labelledby="plannerTitle">
-  <div class="container">
-    <header class="section__head reveal">
-      <p class="eyebrow">Planning tools</p>
-      <h2 class="section__title" id="plannerTitle">See the shape of your next thirty years</h2>
-      <p class="section__sub">A simple projection of invested assets to your target retirement age. It is a starting point for a conversation — not a plan, and not advice.</p>
-    </header>
-
-    <div class="planner reveal">
-      <!-- ── Inputs ── -->
-      <form class="planner__form" id="plannerForm" novalidate>
-        <h3 class="planner__legend">Your assumptions</h3>
-
-        <div class="field">
-          <label for="pAgeNow">Current age</label>
-          <div class="field__wrap field__wrap--unit"><input type="number" id="pAgeNow" name="ageNow" value="38" min="18" max="75" step="1" inputmode="numeric" autocomplete="off" required><span class="field__unit">yrs</span></div>
-          <p class="field__msg" id="pAgeNowMsg"></p>
-        </div>
-
-        <div class="field">
-          <label for="pAgeEnd">Target retirement age</label>
-          <div class="field__wrap field__wrap--unit"><input type="number" id="pAgeEnd" name="ageEnd" value="65" min="40" max="85" step="1" inputmode="numeric" autocomplete="off" required><span class="field__unit">yrs</span></div>
-          <p class="field__msg" id="pAgeEndMsg"></p>
-        </div>
-
-        <div class="field">
-          <label for="pAssets">Invested assets today</label>
-          <div class="field__wrap field__wrap--prefix"><span class="field__prefix">$</span><input type="number" id="pAssets" name="assets" value="325000" min="0" max="25000000" step="1000" inputmode="numeric" autocomplete="off" required></div>
-          <p class="field__msg" id="pAssetsMsg"></p>
-        </div>
-
-        <div class="field">
-          <label for="pMonthly">Monthly contribution</label>
-          <div class="field__wrap field__wrap--prefix"><span class="field__prefix">$</span><input type="number" id="pMonthly" name="monthly" value="2500" min="0" max="100000" step="50" inputmode="numeric" autocomplete="off" required></div>
-          <p class="field__msg" id="pMonthlyMsg"></p>
-        </div>
-
-        <div class="field">
-          <label for="pReturn">Assumed annual return <span class="field__hint">before inflation</span></label>
-          <div class="field__wrap field__wrap--unit"><input type="number" id="pReturn" name="rate" value="6.5" min="0" max="12" step="0.1" inputmode="decimal" autocomplete="off" required><span class="field__unit">%</span></div>
-          <p class="field__msg" id="pReturnMsg"></p>
-        </div>
-
-        <div class="planner__actions">
-          <button class="btn btn--primary" type="submit">Update projection</button>
-          <button class="btn btn--quiet" type="reset" id="plannerReset">Reset</button>
-        </div>
-      </form>
-
-      <!-- ── Results ── -->
-      <div class="planner__out">
-        <div class="planner__headline">
-          <p class="planner__label">Estimated portfolio at retirement</p>
-          <p class="planner__hero" id="pResultTotal">$4,065,873</p>
-          <p class="planner__caption" id="pResultCaption">In 27 years, at age 65.</p>
-        </div>
-
-        <dl class="planner__breakdown">
-          <div><dt>Contributed by you</dt><dd id="pResultPaid">$1,135,000</dd></div>
-          <div><dt>Estimated growth</dt><dd id="pResultGrowth">$2,930,873</dd></div>
-          <div><dt>Est. first-year income <span class="planner__note-inline">at 4%</span></dt><dd id="pResultIncome">$162,635</dd></div>
-        </dl>
-
-        <figure class="chart" id="chartFigure">
-          <figcaption class="chart__cap">
-            <span class="chart__title">Projected balance by year</span>
-            <button class="chart__toggle" id="chartToggle" type="button" aria-expanded="false" aria-controls="chartTable"><i class="ph ph-table" aria-hidden="true"></i> View as table</button>
-          </figcaption>
-          <div class="chart__plot" id="chartPlot">
-            <div class="chart__tip" id="chartTip" role="status" aria-live="off" hidden></div>
-          </div>
-          <div class="chart__tablewrap" id="chartTable" hidden>
-            <table class="chart__table">
-              <caption class="sr-only">Projected portfolio balance at five-year milestones</caption>
-              <thead><tr><th scope="col">Year</th><th scope="col">Age</th><th scope="col">Contributed</th><th scope="col">Balance</th></tr></thead>
-              <tbody id="chartTableBody"></tbody>
-            </table>
-          </div>
-        </figure>
-
-        <p class="disclaimer"><i class="ph ph-info" aria-hidden="true"></i> <span><strong>Estimates only.</strong> Figures are illustrative, assume a constant rate of return and monthly compounding, and ignore inflation, taxes, fees and sequence-of-returns risk. Real markets do not deliver steady annual returns. This calculator is demonstration content, not financial advice.</span></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════ 5. BOOKING (flexible — consultation) ═══════════════ -->
-<section class="section section--booking" id="booking" aria-labelledby="bookingTitle">
-  <div class="container">
-    <header class="section__head reveal">
-      <p class="eyebrow">Book a call</p>
-      <h2 class="section__title" id="bookingTitle">Thirty minutes, no obligation</h2>
-      <p class="section__sub">Choose a date and time that suits you. You will speak with a CFP® professional — not a salesperson — and leave with at least one thing worth doing whether or not we work together.</p>
-    </header>
-
-    <div class="booking reveal">
-      <!-- ── Scheduling form ── -->
-      <form class="booking__form" id="bookingForm" novalidate>
-        <!-- Placeholder endpoint — swap for Formspree, Netlify Forms or your own backend
-             action="https://formspree.io/f/YOUR_FORM_ID" method="POST" -->
-        <div class="booking__row">
-          <div class="field">
-            <label for="bookName">Full name <span class="req" aria-hidden="true">*</span></label>
-            <div class="field__wrap"><input type="text" id="bookName" name="name" autocomplete="name" placeholder="Alexandra Reyes" required></div>
-            <p class="field__msg" id="bookNameMsg"></p>
-          </div>
-          <div class="field">
-            <label for="bookEmail">Email <span class="req" aria-hidden="true">*</span></label>
-            <div class="field__wrap"><input type="email" id="bookEmail" name="email" autocomplete="email" placeholder="you@example.com" required></div>
-            <p class="field__msg" id="bookEmailMsg"></p>
-          </div>
-        </div>
-
-        <div class="booking__row">
-          <div class="field">
-            <label for="bookPhone">Phone <span class="field__hint">optional</span></label>
-            <div class="field__wrap"><input type="tel" id="bookPhone" name="phone" autocomplete="tel" placeholder="(415) 555-0148"></div>
-            <p class="field__msg" id="bookPhoneMsg"></p>
-          </div>
-          <div class="field">
-            <label for="bookService">What would you like to discuss? <span class="req" aria-hidden="true">*</span></label>
-            <div class="field__wrap field__wrap--select">
-              <select id="bookService" name="service" required>
-                <option value="">Select a planning area…</option>
-                <option value="Retirement income design">Retirement income design</option>
-                <option value="Portfolio construction &amp; rebalancing">Portfolio construction &amp; rebalancing</option>
-                <option value="Tax-aware withdrawal sequencing">Tax-aware withdrawal sequencing</option>
-                <option value="Estate &amp; legacy planning">Estate &amp; legacy planning</option>
-                <option value="Education funding">Education funding</option>
-                <option value="Equity compensation &amp; RSUs">Equity compensation &amp; RSUs</option>
-                <option value="Charitable giving">Charitable giving</option>
-                <option value="Business exit planning">Business exit planning</option>
-                <option value="Something else">Something else</option>
-              </select>
-              <i class="ph ph-caret-down field__caret" aria-hidden="true"></i>
-            </div>
-            <p class="field__msg" id="bookServiceMsg"></p>
-          </div>
-        </div>
-
-        <!-- ── Inline date picker ── -->
-        <div class="field">
-          <span class="field__label" id="dateLabel">Preferred date <span class="req" aria-hidden="true">*</span></span>
-          <div class="cal" role="group" aria-labelledby="dateLabel">
-            <div class="cal__head">
-              <button class="icon-btn cal__nav" type="button" id="calPrev" aria-label="Previous month"><i class="ph ph-caret-left" aria-hidden="true"></i></button>
-              <p class="cal__month" id="calMonth" aria-live="polite">Month</p>
-              <button class="icon-btn cal__nav" type="button" id="calNext" aria-label="Next month"><i class="ph ph-caret-right" aria-hidden="true"></i></button>
-            </div>
-            <div class="cal__dow" aria-hidden="true"><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span></div>
-            <div class="cal__grid" id="calGrid"></div>
-            <p class="cal__hint">Weekdays only. Times shown in Pacific Time.</p>
-          </div>
-          <input type="hidden" id="bookDate" name="date" value="">
-          <p class="field__msg" id="bookDateMsg"></p>
-        </div>
-
-        <!-- ── Time slots ── -->
-        <div class="field">
-          <span class="field__label" id="timeLabel">Preferred time <span class="req" aria-hidden="true">*</span></span>
-          <div class="slots" id="slotGroup" role="group" aria-labelledby="timeLabel">
-            <button class="slot" type="button" data-time="09:00 AM">09:00 AM</button>
-            <button class="slot" type="button" data-time="10:30 AM">10:30 AM</button>
-            <button class="slot" type="button" data-time="01:00 PM">01:00 PM</button>
-            <button class="slot" type="button" data-time="02:30 PM">02:30 PM</button>
-            <button class="slot" type="button" data-time="04:00 PM">04:00 PM</button>
-          </div>
-          <input type="hidden" id="bookTime" name="time" value="">
-          <p class="field__msg" id="bookTimeMsg"></p>
-        </div>
-
-        <div class="field field--check">
-          <label class="check" for="bookConsent">
-            <input type="checkbox" id="bookConsent" name="consent" required>
-            <span class="check__box" aria-hidden="true"><i class="ph ph-check"></i></span>
-            <span class="check__text">I agree to the <a href="#trust">terms and privacy notice</a> and consent to being contacted about this request. <span class="req" aria-hidden="true">*</span></span>
-          </label>
-          <p class="field__msg" id="bookConsentMsg"></p>
-        </div>
-
-        <div class="form__foot">
-          <button class="btn btn--primary" type="submit">Request this time<i class="ph ph-arrow-right" aria-hidden="true"></i></button>
-          <p class="secure-badge"><i class="ph ph-lock-key" aria-hidden="true"></i> Secure connection</p>
-        </div>
-        <!-- Retainer / deposit payments: drop a Stripe Checkout or PayPal button placeholder here -->
-        <p class="form__success" id="bookingSuccess" role="status" hidden><i class="ph ph-check-circle" aria-hidden="true"></i> <span id="bookingSuccessText"></span></p>
-      </form>
-
-      <!-- ── Aside ── -->
-      <aside class="booking__aside">
-        <img class="booking__img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="An adviser greeting a client at the close of a meeting" width="800" height="533" loading="lazy" decoding="async">
-        <h3 class="booking__aside-title">What the first call covers</h3>
-        <ul class="ticklist">
-          <li><i class="ph ph-check" aria-hidden="true"></i> Where you are, in plain numbers</li>
-          <li><i class="ph ph-check" aria-hidden="true"></i> The two or three decisions that matter most this year</li>
-          <li><i class="ph ph-check" aria-hidden="true"></i> Whether our fee structure makes sense for you</li>
-          <li><i class="ph ph-check" aria-hidden="true"></i> A written summary within two business days</li>
-        </ul>
-        <p class="booking__aside-note">Prefer to write first? Use the <a href="#contact">contact form</a> below and we will reply within one business day.</p>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════ 6. ABOUT / STORY ═══════════════ -->
-<section class="section section--about" id="about" aria-labelledby="aboutTitle">
-  <div class="container">
-    <header class="section__head reveal">
-      <p class="eyebrow">Our story</p>
-      <h2 class="section__title" id="aboutTitle">Independent since the first day</h2>
-      <p class="section__sub">Meridian &amp; Vale was founded in 2003 by two advisers who wanted to give advice without a product shelf behind them. We have never sold a commissioned product, and we never will.</p>
-    </header>
-
-    <div class="about__split reveal">
-      <figure class="about__figure">
-        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="The Meridian and Vale advisory office, with meeting rooms and natural light" width="900" height="600" loading="lazy" decoding="async">
-      </figure>
-      <div class="about__blocks">
-        <article class="about__block">
-          <h3>What we believe</h3>
-          <p>That most financial outcomes are decided by a handful of choices — savings rate, asset allocation, tax location, and whether you stay invested. We spend our time on those four and treat everything else as noise.</p>
-        </article>
-        <article class="about__block">
-          <h3>How we are paid</h3>
-          <p>One transparent fee: a flat planning engagement, or 0.65% of assets under management, tapering above $5M. No commissions, no revenue sharing, no third-party incentives of any kind.</p>
-        </article>
-        <article class="about__block">
-          <h3>Who we serve</h3>
-          <p>Around 480 households — mid-career professionals, founders approaching an exit, and retired families protecting a legacy. We deliberately cap each adviser at 60 relationships.</p>
-        </article>
-      </div>
-    </div>
-
-    <ol class="timeline reveal">
-      <li><span class="timeline__year">2003</span><p>Founded in San Francisco; registered as an investment adviser.</p></li>
-      <li><span class="timeline__year">2016</span><p>Transitioned to SEC registration; adopted a written fiduciary pledge.</p></li>
-      <li><span class="timeline__year">2021</span><p>Opened an in-house tax and estate coordination desk.</p></li>
-      <li><span class="timeline__year">2024</span><p>Completed an independent SOC 2 Type II examination.</p></li>
-    </ol>
-
-    <h3 class="about__team-title reveal">The people you will actually speak to</h3>
-    <ul class="team reveal">
-      <li class="member">
-        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&amp;fit=crop&amp;crop=faces&amp;facepad=3&amp;w=500&amp;h=500&amp;q=80" alt="Portrait of Elena Vale, Managing Partner" width="500" height="500" loading="lazy" decoding="async">
-        <h4>Elena Vale</h4>
-        <p class="member__role">Managing Partner · CFP®, CFA</p>
-        <p class="member__bio">Leads retirement income and portfolio policy. Twenty-three years advising households through four market cycles.</p>
-      </li>
-      <li class="member">
-        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;crop=faces&amp;facepad=3&amp;w=500&amp;h=500&amp;q=80" alt="Portrait of Marcus Aldridge, Partner and Head of Tax Strategy" width="500" height="500" loading="lazy" decoding="async">
-        <h4>Marcus Aldridge</h4>
-        <p class="member__role">Partner · CPA, CFP®</p>
-        <p class="member__bio">Heads tax strategy and equity compensation. Former Big Four private client practice.</p>
-      </li>
-      <li class="member">
-        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&amp;fit=crop&amp;crop=faces&amp;facepad=3&amp;w=500&amp;h=500&amp;q=80" alt="Portrait of Priya Raman, Director of Estate and Legacy Planning" width="500" height="500" loading="lazy" decoding="async">
-        <h4>Priya Raman</h4>
-        <p class="member__role">Director, Legacy · JD, CFP®</p>
-        <p class="member__bio">Coordinates estate structures, charitable vehicles and multi-generational transfers with your attorney.</p>
-      </li>
-    </ul>
-    <p class="about__fineprint">Team profiles are illustrative placeholders created for this demonstration site.</p>
-  </div>
-</section>
-
-<!-- ═══════════════ 7. TRUST & FEATURES ═══════════════ -->
-<section class="section section--trust" id="trust" aria-labelledby="trustTitle">
-  <div class="container">
-    <header class="section__head reveal">
-      <p class="eyebrow">Trust &amp; safeguards</p>
-      <h2 class="section__title" id="trustTitle">The protections behind the advice</h2>
-      <p class="section__sub">Independence is a structure, not a slogan. Here is how client assets are held, how we are supervised, and what you are entitled to see at any time.</p>
-    </header>
-
-    <ul class="trust-grid">
-      <li class="t-card reveal" data-delay="1"><span class="t-card__icon"><i class="ph ph-scales" aria-hidden="true"></i></span><h3>Fiduciary in writing</h3><p>We are legally required to place your interests first, on every recommendation, and we put that obligation in the engagement letter.</p></li>
-      <li class="t-card reveal" data-delay="2"><span class="t-card__icon"><i class="ph ph-vault" aria-hidden="true"></i></span><h3>Independent custody</h3><p>We never hold your money. Assets sit in your name at a third-party SIPC-member custodian; we hold trading authority only.</p></li>
-      <li class="t-card reveal" data-delay="3"><span class="t-card__icon"><i class="ph ph-shield-check" aria-hidden="true"></i></span><h3>SOC 2 Type II</h3><p>Our systems complete an annual independent examination covering security, availability and confidentiality controls.</p></li>
-      <li class="t-card reveal" data-delay="4"><span class="t-card__icon"><i class="ph ph-receipt" aria-hidden="true"></i></span><h3>One disclosed fee</h3><p>Your quarterly statement shows the fee in dollars, not just basis points. No commissions, no revenue sharing, no soft dollars.</p></li>
-      <li class="t-card reveal" data-delay="5"><span class="t-card__icon"><i class="ph ph-file-text" aria-hidden="true"></i></span><h3>Open books</h3><p>Form ADV Parts 2A and 2B, our privacy notice and our conflicts register are available on request, before you sign anything.</p></li>
-      <li class="t-card reveal" data-delay="6"><span class="t-card__icon"><i class="ph ph-lock-key" aria-hidden="true"></i></span><h3>Data discipline</h3><p>TLS 1.3 in transit, AES-256 at rest, mandatory MFA, and no sale or sharing of client data with third-party marketers. Ever.</p></li>
-    </ul>
-
-    <!-- Testimonials sub-block -->
-    <h3 class="trust__sub-title reveal">In our clients' words</h3>
-    <ul class="quotes">
-      <li class="quote reveal" data-delay="1">
-        <i class="ph ph-quotes quote__mark" aria-hidden="true"></i>
-        <blockquote><p>They talked me out of a product I was excited about and showed me the arithmetic. That conversation is the reason we are still here eleven years later.</p></blockquote>
-        <div class="quote__by">
-          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&amp;fit=crop&amp;crop=faces&amp;facepad=3&amp;w=200&amp;h=200&amp;q=80" alt="Portrait of client D. Okafor" width="200" height="200" loading="lazy" decoding="async">
-          <span><strong>D. Okafor</strong>Client since 2014</span>
-        </div>
-      </li>
-      <li class="quote reveal" data-delay="2">
-        <i class="ph ph-quotes quote__mark" aria-hidden="true"></i>
-        <blockquote><p>We sold the business in a compressed timeline. Meridian &amp; Vale had already modelled three versions of the exit, so the tax work was finished before the wire cleared.</p></blockquote>
-        <div class="quote__by">
-          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&amp;fit=crop&amp;crop=faces&amp;facepad=3&amp;w=200&amp;h=200&amp;q=80" alt="Portrait of client H. Lindqvist" width="200" height="200" loading="lazy" decoding="async">
-          <span><strong>H. Lindqvist</strong>Client since 2019</span>
-        </div>
-      </li>
-      <li class="quote reveal" data-delay="3">
-        <i class="ph ph-quotes quote__mark" aria-hidden="true"></i>
-        <blockquote><p>Nobody has ever tried to sell me anything. In twenty years of dealing with financial firms, that is genuinely the thing I notice most.</p></blockquote>
-        <div class="quote__by">
-          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&amp;fit=crop&amp;crop=faces&amp;facepad=3&amp;w=200&amp;h=200&amp;q=80" alt="Portrait of client R. Castellanos" width="200" height="200" loading="lazy" decoding="async">
-          <span><strong>R. Castellanos</strong>Client since 2011</span>
-        </div>
-      </li>
-    </ul>
-    <p class="about__fineprint">Testimonials are illustrative placeholders written for this demonstration site and do not represent real clients or outcomes.</p>
-  </div>
-</section>
-
-<!-- ═══════════════ 8. CONTACT ═══════════════ -->
-<section class="section section--contact" id="contact" aria-labelledby="contactTitle">
-  <div class="container">
-    <header class="section__head reveal">
-      <p class="eyebrow">Get in touch</p>
-      <h2 class="section__title" id="contactTitle">Start a conversation</h2>
-      <p class="section__sub">Questions about our fee, our process, or whether we are the right fit? Write to us — a partner reads every message.</p>
-    </header>
-
-    <div class="contact reveal">
-      <form class="contact__form" id="contactForm" novalidate>
-        <!-- Placeholder endpoint — swap for Formspree, Netlify Forms or your own backend
-             action="https://formspree.io/f/YOUR_FORM_ID" method="POST"  |  or add: data-netlify="true" -->
-        <div class="contact__row">
-          <div class="field">
-            <label for="cName">Full name <span class="req" aria-hidden="true">*</span></label>
-            <div class="field__wrap"><input type="text" id="cName" name="name" autocomplete="name" placeholder="Alexandra Reyes" required></div>
-            <p class="field__msg" id="cNameMsg"></p>
-          </div>
-          <div class="field">
-            <label for="cEmail">Email <span class="req" aria-hidden="true">*</span></label>
-            <div class="field__wrap"><input type="email" id="cEmail" name="email" autocomplete="email" placeholder="you@example.com" required></div>
-            <p class="field__msg" id="cEmailMsg"></p>
-          </div>
-        </div>
-
-        <div class="field">
-          <label for="cSubject">Subject <span class="req" aria-hidden="true">*</span></label>
-          <div class="field__wrap field__wrap--select">
-            <select id="cSubject" name="subject" required>
-              <option value="">Choose a subject…</option>
-              <option value="New client enquiry">New client enquiry</option>
-              <option value="Fees and engagement">Fees and engagement</option>
-              <option value="Existing client support">Existing client support</option>
-              <option value="Media or speaking">Media or speaking</option>
-              <option value="Careers">Careers</option>
-            </select>
-            <i class="ph ph-caret-down field__caret" aria-hidden="true"></i>
-          </div>
-          <p class="field__msg" id="cSubjectMsg"></p>
-        </div>
-
-        <div class="field">
-          <label for="cMessage">Message <span class="req" aria-hidden="true">*</span></label>
-          <div class="field__wrap"><textarea id="cMessage" name="message" rows="5" placeholder="Tell us a little about your situation and what you would like to solve." required></textarea></div>
-          <p class="field__msg" id="cMessageMsg"></p>
-        </div>
-
-        <div class="field field--check">
-          <label class="check" for="cConsent">
-            <input type="checkbox" id="cConsent" name="consent" required>
-            <span class="check__box" aria-hidden="true"><i class="ph ph-check"></i></span>
-            <span class="check__text">I consent to Meridian &amp; Vale storing this enquiry in order to reply. <span class="req" aria-hidden="true">*</span></span>
-          </label>
-          <p class="field__msg" id="cConsentMsg"></p>
-        </div>
-
-        <div class="form__foot">
-          <button class="btn btn--primary" type="submit">Send message<i class="ph ph-arrow-right" aria-hidden="true"></i></button>
-          <p class="secure-badge"><i class="ph ph-lock-key" aria-hidden="true"></i> Secure connection</p>
-        </div>
-        <p class="form__success" id="contactSuccess" role="status" hidden><i class="ph ph-check-circle" aria-hidden="true"></i> <span>Thank you — your message has been received. A partner will reply within one business day.</span></p>
-      </form>
-
-      <aside class="contact__aside">
-        <ul class="contact__details">
-          <li><span class="contact__ico"><i class="ph ph-map-pin" aria-hidden="true"></i></span><span><strong>Office</strong>1180 Kearny Street, Suite 400<br>San Francisco, CA 94133</span></li>
-          <li><span class="contact__ico"><i class="ph ph-phone" aria-hidden="true"></i></span><span><strong>Telephone</strong><a href="tel:+14155550148">(415) 555-0148</a></span></li>
-          <li><span class="contact__ico"><i class="ph ph-envelope-simple" aria-hidden="true"></i></span><span><strong>Email</strong><a href="mailto:advice@meridianvale.example">advice@meridianvale.example</a></span></li>
-          <li><span class="contact__ico"><i class="ph ph-clock" aria-hidden="true"></i></span><span><strong>Hours</strong>Mon–Fri, 8:30am–5:30pm PT</span></li>
-        </ul>
-
-        <!-- Google Maps embed placeholder — replace src with your own Maps iframe URL -->
-        <div class="map" role="img" aria-label="Map placeholder showing the Kearny Street office location in San Francisco">
-          <div class="map__inner">
-            <i class="ph ph-map-trifold" aria-hidden="true"></i>
-            <p>Google Maps embed<span>&lt;iframe src="…"&gt; goes here</span></p>
-          </div>
-        </div>
-
-        <ul class="socials" aria-label="Social profiles">
-          <li><a href="#contact" aria-label="Meridian and Vale on LinkedIn"><i class="ph ph-linkedin-logo" aria-hidden="true"></i></a></li>
-          <li><a href="#contact" aria-label="Meridian and Vale on X"><i class="ph ph-x-logo" aria-hidden="true"></i></a></li>
-          <li><a href="#contact" aria-label="Meridian and Vale on Instagram"><i class="ph ph-instagram-logo" aria-hidden="true"></i></a></li>
-          <li><a href="#contact" aria-label="Meridian and Vale newsletter"><i class="ph ph-paper-plane-tilt" aria-hidden="true"></i></a></li>
-        </ul>
-      </aside>
-    </div>
-  </div>
-</section>
-</main>
-
-<!-- ═══════════════ 9. FOOTER ═══════════════ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <a class="nav__logo footer__logo" href="#home" aria-label="Meridian and Vale — back to top">
-          <span class="nav__mark" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="26" height="26" focusable="false"><path d="M4 25 L11 8 L16 19 L21 8 L28 25" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="16" cy="26.6" r="1.5" fill="currentColor"></circle></svg>
-          </span>
-          <span class="nav__word">Meridian<em>&amp;</em>Vale</span>
-        </a>
-        <p class="footer__blurb">A fee-only fiduciary advisory practice. Planning for families and founders who measure in decades.</p>
-        <ul class="socials socials--footer" aria-label="Social profiles">
-          <li><a href="#contact" aria-label="Meridian and Vale on LinkedIn"><i class="ph ph-linkedin-logo" aria-hidden="true"></i></a></li>
-          <li><a href="#contact" aria-label="Meridian and Vale on X"><i class="ph ph-x-logo" aria-hidden="true"></i></a></li>
-          <li><a href="#contact" aria-label="Meridian and Vale on Instagram"><i class="ph ph-instagram-logo" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
-
-      <nav class="footer__col" aria-label="Footer section links">
-        <h4>Sections</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#booking">Book a Call</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#trust">Trust</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <nav class="nav__links" aria-label="Section navigation">
+        <a href="#home" class="nav__link is-active" aria-current="true">Home</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#booking" class="nav__link">Book a Call</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#trust" class="nav__link">Trust</a>
+        <a href="#contact" class="nav__link">Contact</a>
       </nav>
 
-      <div class="footer__col">
-        <h4>Office</h4>
-        <ul class="footer__plain">
-          <li>1180 Kearny Street, Suite 400<br>San Francisco, CA 94133</li>
-          <li><a href="tel:+14155550148">(415) 555-0148</a></li>
-          <li><a href="mailto:advice@meridianvale.example">advice@meridianvale.example</a></li>
-          <li>Mon–Fri, 8:30am–5:30pm PT</li>
+      <div class="nav__actions">
+        <button class="icon-btn theme-toggle" id="themeToggleDesktop" type="button" aria-label="Switch to dark theme"
+          aria-pressed="false">
+          <i class="ph ph-sun theme-toggle__sun" aria-hidden="true"></i>
+          <i class="ph ph-moon theme-toggle__moon" aria-hidden="true"></i>
+        </button>
+        <a href="#booking" class="btn btn--primary nav__cta" data-cta-focus="bookName">Book a Call</a>
+        <button class="icon-btn nav__burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false"
+          aria-controls="drawer">
+          <i class="ph ph-list" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════ MOBILE DRAWER (≤1024px) ═══════════════ -->
+  <div class="drawer__backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Mobile menu" aria-hidden="true">
+    <div class="drawer__head">
+      <span class="drawer__title">Menu</span>
+      <button class="icon-btn" id="drawerClose" type="button" aria-label="Close menu"><i class="ph ph-x"
+          aria-hidden="true"></i></button>
+    </div>
+    <nav class="drawer__links" aria-label="Mobile section navigation">
+      <a href="#home" class="drawer__link">Home</a>
+      <a href="#services" class="drawer__link">Services</a>
+      <a href="#booking" class="drawer__link">Book a Call</a>
+      <a href="#about" class="drawer__link">About</a>
+      <a href="#trust" class="drawer__link">Trust</a>
+      <a href="#contact" class="drawer__link">Contact</a>
+    </nav>
+    <div class="drawer__foot">
+      <button class="drawer__theme theme-toggle" id="themeToggleMobile" type="button" aria-label="Switch to dark theme"
+        aria-pressed="false">
+        <span class="drawer__theme-label"><i class="ph ph-sun theme-toggle__sun" aria-hidden="true"></i><i
+            class="ph ph-moon theme-toggle__moon" aria-hidden="true"></i>Appearance</span>
+        <span class="drawer__theme-state" id="themeStateLabel">Light</span>
+      </button>
+      <a href="#booking" class="btn btn--primary drawer__cta" data-cta-focus="bookName">Book a Call</a>
+      <p class="drawer__note">Complimentary 30-minute introduction. No obligation.</p>
+    </div>
+  </aside>
+
+  <main id="main">
+
+    <!-- ═══════════════ 1. HERO ═══════════════ -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="hero__bg">
+        <img
+          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&amp;fit=crop&amp;w=2000&amp;q=80"
+          alt="A planning meeting in progress, with printed portfolio reports spread across the table" width="2000"
+          height="1125" fetchpriority="high" decoding="async">
+        <span class="hero__scrim" aria-hidden="true"></span>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow reveal" data-delay="1">Independent · Fee-only · Fiduciary</p>
+          <h1 class="hero__title reveal" data-delay="2">Wealth, planned on a <em>longer horizon.</em></h1>
+          <p class="hero__lede reveal" data-delay="3">Meridian &amp; Vale is a fee-only advisory practice for families
+            and founders. We build plans people keep for decades — not portfolios they abandon in a difficult quarter.
+          </p>
+          <div class="hero__actions reveal" data-delay="4">
+            <a href="#booking" class="btn btn--primary" data-cta-focus="bookName">Book a Call<i
+                class="ph ph-arrow-right" aria-hidden="true"></i></a>
+            <a href="#services" class="btn btn--ghost">Explore services</a>
+          </div>
+          <p class="hero__badge reveal" data-delay="4">
+            <i class="ph ph-seal-check" aria-hidden="true"></i>
+            <span><strong>Fiduciary duty</strong>Advice owed to you, in writing.</span>
+          </p>
+          <dl class="hero__stats reveal" data-delay="5">
+            <div class="hero__stat">
+              <dt>Client assets advised</dt>
+              <dd>$1.4B</dd>
+            </div>
+            <div class="hero__stat">
+              <dt>Families served</dt>
+              <dd>480</dd>
+            </div>
+            <div class="hero__stat">
+              <dt>Years independent</dt>
+              <dd>22</dd>
+            </div>
+          </dl>
+          <p class="hero__fineprint reveal" data-delay="5">Figures shown are illustrative placeholders for this
+            demonstration site.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ 1b. CREDENTIALS MARQUEE ═══════════════ -->
+    <section class="marquee" aria-label="Credentials and affiliations">
+      <div class="marquee__viewport">
+        <ul class="marquee__track">
+          <li class="marquee__item"><i class="ph ph-seal-check" aria-hidden="true"></i>CFP® Professionals</li>
+          <li class="marquee__item"><i class="ph ph-scales" aria-hidden="true"></i>Fiduciary, in writing</li>
+          <li class="marquee__item"><i class="ph ph-certificate" aria-hidden="true"></i>CFA® Charterholders</li>
+          <li class="marquee__item"><i class="ph ph-hand-coins" aria-hidden="true"></i>Fee-only — no commissions</li>
+          <li class="marquee__item"><i class="ph ph-bank" aria-hidden="true"></i>Independent custodian</li>
+          <li class="marquee__item"><i class="ph ph-shield-check" aria-hidden="true"></i>SEC registered adviser</li>
+          <li class="marquee__item"><i class="ph ph-users-three" aria-hidden="true"></i>NAPFA member firm</li>
+          <li class="marquee__item"><i class="ph ph-calculator" aria-hidden="true"></i>CPAs on staff</li>
+        </ul>
+        <ul class="marquee__track" aria-hidden="true">
+          <li class="marquee__item"><i class="ph ph-seal-check" aria-hidden="true"></i>CFP® Professionals</li>
+          <li class="marquee__item"><i class="ph ph-scales" aria-hidden="true"></i>Fiduciary, in writing</li>
+          <li class="marquee__item"><i class="ph ph-certificate" aria-hidden="true"></i>CFA® Charterholders</li>
+          <li class="marquee__item"><i class="ph ph-hand-coins" aria-hidden="true"></i>Fee-only — no commissions</li>
+          <li class="marquee__item"><i class="ph ph-bank" aria-hidden="true"></i>Independent custodian</li>
+          <li class="marquee__item"><i class="ph ph-shield-check" aria-hidden="true"></i>SEC registered adviser</li>
+          <li class="marquee__item"><i class="ph ph-users-three" aria-hidden="true"></i>NAPFA member firm</li>
+          <li class="marquee__item"><i class="ph ph-calculator" aria-hidden="true"></i>CPAs on staff</li>
         </ul>
       </div>
+    </section>
 
-      <div class="footer__col footer__col--news">
-        <h4>Quarterly letter</h4>
-        <p class="footer__news-copy">One considered note each quarter on planning, markets and tax. No promotions.</p>
-        <!-- Mailchimp embed placeholder — paste your audience form markup/action here -->
-        <form class="footer__news" id="newsForm" novalidate>
-          <label class="sr-only" for="newsEmail">Email address</label>
-          <input type="email" id="newsEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
-          <button class="btn btn--primary" type="submit" aria-label="Subscribe to the quarterly letter"><i class="ph ph-arrow-right" aria-hidden="true"></i></button>
-        </form>
-        <p class="field__msg" id="newsMsg"></p>
+    <!-- ═══════════════ 2. OFFERING HIGHLIGHTS ═══════════════ -->
+    <section class="section section--approach" id="approach" aria-labelledby="approachTitle">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">The engagement</p>
+          <h2 class="section__title" id="approachTitle">A deliberate, four-part process</h2>
+          <p class="section__sub">Every relationship begins the same way and moves at the pace of your life — not a
+            sales calendar. Nothing is implemented until you have seen the arithmetic behind it.</p>
+        </header>
+
+        <ol class="approach-grid">
+          <li class="a-card reveal" data-delay="1">
+            <span class="a-card__num">01</span>
+            <span class="a-card__icon"><i class="ph ph-ear" aria-hidden="true"></i></span>
+            <h3 class="a-card__title">Listen</h3>
+            <p class="a-card__text">A 90-minute discovery conversation about obligations, timelines and the things you
+              would rather not have to think about again.</p>
+            <span class="a-card__meta">Weeks 1–2</span>
+          </li>
+          <li class="a-card reveal" data-delay="2">
+            <span class="a-card__num">02</span>
+            <span class="a-card__icon"><i class="ph ph-compass-tool" aria-hidden="true"></i></span>
+            <h3 class="a-card__title">Model</h3>
+            <p class="a-card__text">We model your plan against several decades of market history, then stress it — early
+              retirement, long care, a lost income, a sold business.</p>
+            <span class="a-card__meta">Weeks 3–5</span>
+          </li>
+          <li class="a-card reveal" data-delay="3">
+            <span class="a-card__num">03</span>
+            <span class="a-card__icon"><i class="ph ph-blueprint" aria-hidden="true"></i></span>
+            <h3 class="a-card__title">Implement</h3>
+            <p class="a-card__text">Accounts opened at an independent custodian, portfolios funded tax-aware, documents
+              coordinated with your attorney and CPA.</p>
+            <span class="a-card__meta">Weeks 6–9</span>
+          </li>
+          <li class="a-card reveal" data-delay="4">
+            <span class="a-card__num">04</span>
+            <span class="a-card__icon"><i class="ph ph-tree-evergreen" aria-hidden="true"></i></span>
+            <h3 class="a-card__title">Steward</h3>
+            <p class="a-card__text">Quarterly reviews, annual re-planning, and a call whenever life changes shape. Your
+              plan is a document that keeps moving.</p>
+            <span class="a-card__meta">Ongoing</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══════════════ 3. SERVICES (flexible — listing + detail modal) ═══════════════ -->
+    <section class="section section--services" id="services" aria-labelledby="servicesTitle">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Advisory services</p>
+          <h2 class="section__title" id="servicesTitle">Planning, in the areas that compound</h2>
+          <p class="section__sub">Eight disciplines, delivered by the same team under one flat or asset-based fee.
+            Filter by the question you are trying to answer, then open a service for its approach, credentials and
+            pricing.</p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filter services by planning area">
+          <button class="filter is-active" type="button" data-filter="all">All <span
+              class="filter__count">8</span></button>
+          <button class="filter" type="button" data-filter="retirement">Retirement <span
+              class="filter__count">2</span></button>
+          <button class="filter" type="button" data-filter="investing">Investing <span
+              class="filter__count">2</span></button>
+          <button class="filter" type="button" data-filter="tax">Tax <span class="filter__count">2</span></button>
+          <button class="filter" type="button" data-filter="estate">Estate <span class="filter__count">1</span></button>
+          <button class="filter" type="button" data-filter="education">Education <span
+              class="filter__count">1</span></button>
+        </div>
+
+        <ul class="svc-grid" id="serviceGrid" aria-live="polite"></ul>
+        <p class="svc-empty" id="serviceEmpty" hidden>No services match that filter.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════ 4. PLANNER (flexible — calculator/tools) ═══════════════ -->
+    <section class="section section--planner" id="planner" aria-labelledby="plannerTitle">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Planning tools</p>
+          <h2 class="section__title" id="plannerTitle">See the shape of your next thirty years</h2>
+          <p class="section__sub">A simple projection of invested assets to your target retirement age. It is a starting
+            point for a conversation — not a plan, and not advice.</p>
+        </header>
+
+        <div class="planner reveal">
+          <!-- ── Inputs ── -->
+          <form class="planner__form" id="plannerForm" novalidate>
+            <h3 class="planner__legend">Your assumptions</h3>
+
+            <div class="field">
+              <label for="pAgeNow">Current age</label>
+              <div class="field__wrap field__wrap--unit"><input type="number" id="pAgeNow" name="ageNow" value="38"
+                  min="18" max="75" step="1" inputmode="numeric" autocomplete="off" required><span
+                  class="field__unit">yrs</span></div>
+              <p class="field__msg" id="pAgeNowMsg"></p>
+            </div>
+
+            <div class="field">
+              <label for="pAgeEnd">Target retirement age</label>
+              <div class="field__wrap field__wrap--unit"><input type="number" id="pAgeEnd" name="ageEnd" value="65"
+                  min="40" max="85" step="1" inputmode="numeric" autocomplete="off" required><span
+                  class="field__unit">yrs</span></div>
+              <p class="field__msg" id="pAgeEndMsg"></p>
+            </div>
+
+            <div class="field">
+              <label for="pAssets">Invested assets today</label>
+              <div class="field__wrap field__wrap--prefix"><span class="field__prefix">$</span><input type="number"
+                  id="pAssets" name="assets" value="325000" min="0" max="25000000" step="1000" inputmode="numeric"
+                  autocomplete="off" required></div>
+              <p class="field__msg" id="pAssetsMsg"></p>
+            </div>
+
+            <div class="field">
+              <label for="pMonthly">Monthly contribution</label>
+              <div class="field__wrap field__wrap--prefix"><span class="field__prefix">$</span><input type="number"
+                  id="pMonthly" name="monthly" value="2500" min="0" max="100000" step="50" inputmode="numeric"
+                  autocomplete="off" required></div>
+              <p class="field__msg" id="pMonthlyMsg"></p>
+            </div>
+
+            <div class="field">
+              <label for="pReturn">Assumed annual return <span class="field__hint">before inflation</span></label>
+              <div class="field__wrap field__wrap--unit"><input type="number" id="pReturn" name="rate" value="6.5"
+                  min="0" max="12" step="0.1" inputmode="decimal" autocomplete="off" required><span
+                  class="field__unit">%</span></div>
+              <p class="field__msg" id="pReturnMsg"></p>
+            </div>
+
+            <div class="planner__actions">
+              <button class="btn btn--primary" type="submit">Update projection</button>
+              <button class="btn btn--quiet" type="reset" id="plannerReset">Reset</button>
+            </div>
+          </form>
+
+          <!-- ── Results ── -->
+          <div class="planner__out">
+            <div class="planner__headline">
+              <p class="planner__label">Estimated portfolio at retirement</p>
+              <p class="planner__hero" id="pResultTotal">$4,065,873</p>
+              <p class="planner__caption" id="pResultCaption">In 27 years, at age 65.</p>
+            </div>
+
+            <dl class="planner__breakdown">
+              <div>
+                <dt>Contributed by you</dt>
+                <dd id="pResultPaid">$1,135,000</dd>
+              </div>
+              <div>
+                <dt>Estimated growth</dt>
+                <dd id="pResultGrowth">$2,930,873</dd>
+              </div>
+              <div>
+                <dt>Est. first-year income <span class="planner__note-inline">at 4%</span></dt>
+                <dd id="pResultIncome">$162,635</dd>
+              </div>
+            </dl>
+
+            <figure class="chart" id="chartFigure">
+              <figcaption class="chart__cap">
+                <span class="chart__title">Projected balance by year</span>
+                <button class="chart__toggle" id="chartToggle" type="button" aria-expanded="false"
+                  aria-controls="chartTable"><i class="ph ph-table" aria-hidden="true"></i> View as table</button>
+              </figcaption>
+              <div class="chart__plot" id="chartPlot">
+                <div class="chart__tip" id="chartTip" role="status" aria-live="off" hidden></div>
+              </div>
+              <div class="chart__tablewrap" id="chartTable" hidden>
+                <table class="chart__table">
+                  <caption class="sr-only">Projected portfolio balance at five-year milestones</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Year</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">Contributed</th>
+                      <th scope="col">Balance</th>
+                    </tr>
+                  </thead>
+                  <tbody id="chartTableBody"></tbody>
+                </table>
+              </div>
+            </figure>
+
+            <p class="disclaimer"><i class="ph ph-info" aria-hidden="true"></i> <span><strong>Estimates only.</strong>
+                Figures are illustrative, assume a constant rate of return and monthly compounding, and ignore
+                inflation, taxes, fees and sequence-of-returns risk. Real markets do not deliver steady annual returns.
+                This calculator is demonstration content, not financial advice.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ 5. BOOKING (flexible — consultation) ═══════════════ -->
+    <section class="section section--booking" id="booking" aria-labelledby="bookingTitle">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Book a call</p>
+          <h2 class="section__title" id="bookingTitle">Thirty minutes, no obligation</h2>
+          <p class="section__sub">Choose a date and time that suits you. You will speak with a CFP® professional — not a
+            salesperson — and leave with at least one thing worth doing whether or not we work together.</p>
+        </header>
+
+        <div class="booking reveal">
+          <!-- ── Scheduling form ── -->
+          <form class="booking__form" id="bookingForm" novalidate>
+            <!-- Placeholder endpoint — swap for Formspree, Netlify Forms or your own backend
+             action="https://formspree.io/f/YOUR_FORM_ID" method="POST" -->
+            <div class="booking__row">
+              <div class="field">
+                <label for="bookName">Full name <span class="req" aria-hidden="true">*</span></label>
+                <div class="field__wrap"><input type="text" id="bookName" name="name" autocomplete="name"
+                    placeholder="Alexandra Reyes" required></div>
+                <p class="field__msg" id="bookNameMsg"></p>
+              </div>
+              <div class="field">
+                <label for="bookEmail">Email <span class="req" aria-hidden="true">*</span></label>
+                <div class="field__wrap"><input type="email" id="bookEmail" name="email" autocomplete="email"
+                    placeholder="you@example.com" required></div>
+                <p class="field__msg" id="bookEmailMsg"></p>
+              </div>
+            </div>
+
+            <div class="booking__row">
+              <div class="field">
+                <label for="bookPhone">Phone <span class="field__hint">optional</span></label>
+                <div class="field__wrap"><input type="tel" id="bookPhone" name="phone" autocomplete="tel"
+                    placeholder="(415) 555-0148"></div>
+                <p class="field__msg" id="bookPhoneMsg"></p>
+              </div>
+              <div class="field">
+                <label for="bookService">What would you like to discuss? <span class="req"
+                    aria-hidden="true">*</span></label>
+                <div class="field__wrap field__wrap--select">
+                  <select id="bookService" name="service" required>
+                    <option value="">Select a planning area…</option>
+                    <option value="Retirement income design">Retirement income design</option>
+                    <option value="Portfolio construction &amp; rebalancing">Portfolio construction &amp; rebalancing
+                    </option>
+                    <option value="Tax-aware withdrawal sequencing">Tax-aware withdrawal sequencing</option>
+                    <option value="Estate &amp; legacy planning">Estate &amp; legacy planning</option>
+                    <option value="Education funding">Education funding</option>
+                    <option value="Equity compensation &amp; RSUs">Equity compensation &amp; RSUs</option>
+                    <option value="Charitable giving">Charitable giving</option>
+                    <option value="Business exit planning">Business exit planning</option>
+                    <option value="Something else">Something else</option>
+                  </select>
+                  <i class="ph ph-caret-down field__caret" aria-hidden="true"></i>
+                </div>
+                <p class="field__msg" id="bookServiceMsg"></p>
+              </div>
+            </div>
+
+            <!-- ── Inline date picker ── -->
+            <div class="field">
+              <span class="field__label" id="dateLabel">Preferred date <span class="req"
+                  aria-hidden="true">*</span></span>
+              <div class="cal" role="group" aria-labelledby="dateLabel">
+                <div class="cal__head">
+                  <button class="icon-btn cal__nav" type="button" id="calPrev" aria-label="Previous month"><i
+                      class="ph ph-caret-left" aria-hidden="true"></i></button>
+                  <p class="cal__month" id="calMonth" aria-live="polite">Month</p>
+                  <button class="icon-btn cal__nav" type="button" id="calNext" aria-label="Next month"><i
+                      class="ph ph-caret-right" aria-hidden="true"></i></button>
+                </div>
+                <div class="cal__dow" aria-hidden="true">
+                  <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+                </div>
+                <div class="cal__grid" id="calGrid"></div>
+                <p class="cal__hint">Weekdays only. Times shown in Pacific Time.</p>
+              </div>
+              <input type="hidden" id="bookDate" name="date" value="">
+              <p class="field__msg" id="bookDateMsg"></p>
+            </div>
+
+            <!-- ── Time slots ── -->
+            <div class="field">
+              <span class="field__label" id="timeLabel">Preferred time <span class="req"
+                  aria-hidden="true">*</span></span>
+              <div class="slots" id="slotGroup" role="group" aria-labelledby="timeLabel">
+                <button class="slot" type="button" data-time="09:00 AM">09:00 AM</button>
+                <button class="slot" type="button" data-time="10:30 AM">10:30 AM</button>
+                <button class="slot" type="button" data-time="01:00 PM">01:00 PM</button>
+                <button class="slot" type="button" data-time="02:30 PM">02:30 PM</button>
+                <button class="slot" type="button" data-time="04:00 PM">04:00 PM</button>
+              </div>
+              <input type="hidden" id="bookTime" name="time" value="">
+              <p class="field__msg" id="bookTimeMsg"></p>
+            </div>
+
+            <div class="field field--check">
+              <label class="check" for="bookConsent">
+                <input type="checkbox" id="bookConsent" name="consent" required>
+                <span class="check__box" aria-hidden="true"><i class="ph ph-check"></i></span>
+                <span class="check__text">I agree to the <a href="#trust">terms and privacy notice</a> and consent to
+                  being contacted about this request. <span class="req" aria-hidden="true">*</span></span>
+              </label>
+              <p class="field__msg" id="bookConsentMsg"></p>
+            </div>
+
+            <div class="form__foot">
+              <button class="btn btn--primary" type="submit">Request this time<i class="ph ph-arrow-right"
+                  aria-hidden="true"></i></button>
+              <p class="secure-badge"><i class="ph ph-lock-key" aria-hidden="true"></i> Secure connection</p>
+            </div>
+            <!-- Retainer / deposit payments: drop a Stripe Checkout or PayPal button placeholder here -->
+            <p class="form__success" id="bookingSuccess" role="status" hidden><i class="ph ph-check-circle"
+                aria-hidden="true"></i> <span id="bookingSuccessText"></span></p>
+          </form>
+
+          <!-- ── Aside ── -->
+          <aside class="booking__aside">
+            <img class="booking__img" src="assets/images/about-office-01.jpg"
+              alt="An adviser greeting a client at the close of a meeting" width="800" height="533" loading="lazy"
+              decoding="async">
+            <h3 class="booking__aside-title">What the first call covers</h3>
+            <ul class="ticklist">
+              <li><i class="ph ph-check" aria-hidden="true"></i> Where you are, in plain numbers</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i> The two or three decisions that matter most this year
+              </li>
+              <li><i class="ph ph-check" aria-hidden="true"></i> Whether our fee structure makes sense for you</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i> A written summary within two business days</li>
+            </ul>
+            <p class="booking__aside-note">Prefer to write first? Use the <a href="#contact">contact form</a> below and
+              we will reply within one business day.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ 6. ABOUT / STORY ═══════════════ -->
+    <section class="section section--about" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Our story</p>
+          <h2 class="section__title" id="aboutTitle">Independent since the first day</h2>
+          <p class="section__sub">Meridian &amp; Vale was founded in 2003 by two advisers who wanted to give advice
+            without a product shelf behind them. We have never sold a commissioned product, and we never will.</p>
+        </header>
+
+        <div class="about__split reveal">
+          <figure class="about__figure">
+            <img src="assets/images/about-office-2.jpg"
+              alt="The Meridian and Vale advisory office, with meeting rooms and natural light" width="1800"
+              height="1200" loading="lazy" decoding="async">
+          </figure>
+          <div class="about__blocks">
+            <article class="about__block">
+              <h3>What we believe</h3>
+              <p>That most financial outcomes are decided by a handful of choices — savings rate, asset allocation, tax
+                location, and whether you stay invested. We spend our time on those four and treat everything else as
+                noise.</p>
+            </article>
+            <article class="about__block">
+              <h3>How we are paid</h3>
+              <p>One transparent fee: a flat planning engagement, or 0.65% of assets under management, tapering above
+                $5M. No commissions, no revenue sharing, no third-party incentives of any kind.</p>
+            </article>
+            <article class="about__block">
+              <h3>Who we serve</h3>
+              <p>Around 480 households — mid-career professionals, founders approaching an exit, and retired families
+                protecting a legacy. We deliberately cap each adviser at 60 relationships.</p>
+            </article>
+          </div>
+        </div>
+
+        <ol class="timeline reveal">
+          <li><span class="timeline__year">2003</span>
+            <p>Founded in San Francisco; registered as an investment adviser.</p>
+          </li>
+          <li><span class="timeline__year">2016</span>
+            <p>Transitioned to SEC registration; adopted a written fiduciary pledge.</p>
+          </li>
+          <li><span class="timeline__year">2021</span>
+            <p>Opened an in-house tax and estate coordination desk.</p>
+          </li>
+          <li><span class="timeline__year">2024</span>
+            <p>Completed an independent SOC 2 Type II examination.</p>
+          </li>
+        </ol>
+
+        <h3 class="about__team-title reveal">The people you will actually speak to</h3>
+        <ul class="team reveal">
+          <li class="member">
+            <img
+              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&amp;fit=crop&amp;crop=faces&amp;facepad=3&amp;w=500&amp;h=500&amp;q=80"
+              alt="Portrait of Elena Vale, Managing Partner" width="500" height="500" loading="lazy" decoding="async">
+            <h4>Elena Vale</h4>
+            <p class="member__role">Managing Partner · CFP®, CFA</p>
+            <p class="member__bio">Leads retirement income and portfolio policy. Twenty-three years advising households
+              through four market cycles.</p>
+          </li>
+          <li class="member">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;crop=faces&amp;facepad=3&amp;w=500&amp;h=500&amp;q=80"
+              alt="Portrait of Marcus Aldridge, Partner and Head of Tax Strategy" width="500" height="500"
+              loading="lazy" decoding="async">
+            <h4>Marcus Aldridge</h4>
+            <p class="member__role">Partner · CPA, CFP®</p>
+            <p class="member__bio">Heads tax strategy and equity compensation. Former Big Four private client practice.
+            </p>
+          </li>
+          <li class="member">
+            <img
+              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&amp;fit=crop&amp;crop=faces&amp;facepad=3&amp;w=500&amp;h=500&amp;q=80"
+              alt="Portrait of Priya Raman, Director of Estate and Legacy Planning" width="500" height="500"
+              loading="lazy" decoding="async">
+            <h4>Priya Raman</h4>
+            <p class="member__role">Director, Legacy · JD, CFP®</p>
+            <p class="member__bio">Coordinates estate structures, charitable vehicles and multi-generational transfers
+              with your attorney.</p>
+          </li>
+        </ul>
+        <p class="about__fineprint">Team profiles are illustrative placeholders created for this demonstration site.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════ 7. TRUST & FEATURES ═══════════════ -->
+    <section class="section section--trust" id="trust" aria-labelledby="trustTitle">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Trust &amp; safeguards</p>
+          <h2 class="section__title" id="trustTitle">The protections behind the advice</h2>
+          <p class="section__sub">Independence is a structure, not a slogan. Here is how client assets are held, how we
+            are supervised, and what you are entitled to see at any time.</p>
+        </header>
+
+        <ul class="trust-grid">
+          <li class="t-card reveal" data-delay="1"><span class="t-card__icon"><i class="ph ph-scales"
+                aria-hidden="true"></i></span>
+            <h3>Fiduciary in writing</h3>
+            <p>We are legally required to place your interests first, on every recommendation, and we put that
+              obligation in the engagement letter.</p>
+          </li>
+          <li class="t-card reveal" data-delay="2"><span class="t-card__icon"><i class="ph ph-vault"
+                aria-hidden="true"></i></span>
+            <h3>Independent custody</h3>
+            <p>We never hold your money. Assets sit in your name at a third-party SIPC-member custodian; we hold trading
+              authority only.</p>
+          </li>
+          <li class="t-card reveal" data-delay="3"><span class="t-card__icon"><i class="ph ph-shield-check"
+                aria-hidden="true"></i></span>
+            <h3>SOC 2 Type II</h3>
+            <p>Our systems complete an annual independent examination covering security, availability and
+              confidentiality controls.</p>
+          </li>
+          <li class="t-card reveal" data-delay="4"><span class="t-card__icon"><i class="ph ph-receipt"
+                aria-hidden="true"></i></span>
+            <h3>One disclosed fee</h3>
+            <p>Your quarterly statement shows the fee in dollars, not just basis points. No commissions, no revenue
+              sharing, no soft dollars.</p>
+          </li>
+          <li class="t-card reveal" data-delay="5"><span class="t-card__icon"><i class="ph ph-file-text"
+                aria-hidden="true"></i></span>
+            <h3>Open books</h3>
+            <p>Form ADV Parts 2A and 2B, our privacy notice and our conflicts register are available on request, before
+              you sign anything.</p>
+          </li>
+          <li class="t-card reveal" data-delay="6"><span class="t-card__icon"><i class="ph ph-lock-key"
+                aria-hidden="true"></i></span>
+            <h3>Data discipline</h3>
+            <p>TLS 1.3 in transit, AES-256 at rest, mandatory MFA, and no sale or sharing of client data with
+              third-party marketers. Ever.</p>
+          </li>
+        </ul>
+
+        <!-- Testimonials sub-block -->
+        <h3 class="trust__sub-title reveal">In our clients' words</h3>
+        <ul class="quotes">
+          <li class="quote reveal" data-delay="1">
+            <i class="ph ph-quotes quote__mark" aria-hidden="true"></i>
+            <blockquote>
+              <p>They talked me out of a product I was excited about and showed me the arithmetic. That conversation is
+                the reason we are still here eleven years later.</p>
+            </blockquote>
+            <div class="quote__by">
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&amp;fit=crop&amp;crop=faces&amp;facepad=3&amp;w=200&amp;h=200&amp;q=80"
+                alt="Portrait of client D. Okafor" width="200" height="200" loading="lazy" decoding="async">
+              <span><strong>D. Okafor</strong>Client since 2014</span>
+            </div>
+          </li>
+          <li class="quote reveal" data-delay="2">
+            <i class="ph ph-quotes quote__mark" aria-hidden="true"></i>
+            <blockquote>
+              <p>We sold the business in a compressed timeline. Meridian &amp; Vale had already modelled three versions
+                of the exit, so the tax work was finished before the wire cleared.</p>
+            </blockquote>
+            <div class="quote__by">
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&amp;fit=crop&amp;crop=faces&amp;facepad=3&amp;w=200&amp;h=200&amp;q=80"
+                alt="Portrait of client H. Lindqvist" width="200" height="200" loading="lazy" decoding="async">
+              <span><strong>H. Lindqvist</strong>Client since 2019</span>
+            </div>
+          </li>
+          <li class="quote reveal" data-delay="3">
+            <i class="ph ph-quotes quote__mark" aria-hidden="true"></i>
+            <blockquote>
+              <p>Nobody has ever tried to sell me anything. In twenty years of dealing with financial firms, that is
+                genuinely the thing I notice most.</p>
+            </blockquote>
+            <div class="quote__by">
+              <img
+                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&amp;fit=crop&amp;crop=faces&amp;facepad=3&amp;w=200&amp;h=200&amp;q=80"
+                alt="Portrait of client R. Castellanos" width="200" height="200" loading="lazy" decoding="async">
+              <span><strong>R. Castellanos</strong>Client since 2011</span>
+            </div>
+          </li>
+        </ul>
+        <p class="about__fineprint">Testimonials are illustrative placeholders written for this demonstration site and
+          do not represent real clients or outcomes.</p>
+
+        <!-- FAQ sub-block — native details/summary, closed until clicked -->
+        <h3 class="trust__sub-title reveal" id="faqTitle">Questions we are asked first</h3>
+        <div class="faq reveal" data-delay="1">
+          <details class="faq__item">
+            <summary class="faq__q">
+              How exactly are you paid?
+              <i class="ph ph-plus faq__sign" aria-hidden="true"></i>
+            </summary>
+            <div class="faq__a">
+              <p>One transparent fee, agreed before any work begins: a flat planning engagement, or 0.65% of assets
+                under management, tapering above $5M. We take no commissions, no revenue sharing and no third-party
+                incentives of any kind, and the fee appears in dollars on your quarterly statement.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">
+              Who actually holds my money?
+              <i class="ph ph-plus faq__sign" aria-hidden="true"></i>
+            </summary>
+            <div class="faq__a">
+              <p>You do. Accounts are opened in your name at an independent SIPC-member custodian, and we hold trading
+                authority only — never the ability to move assets to ourselves. You can log in to the custodian directly
+                at any time to see every holding and transaction.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">
+              What is the minimum to work with you?
+              <i class="ph ph-plus faq__sign" aria-hidden="true"></i>
+            </summary>
+            <div class="faq__a">
+              <p>There is no hard asset minimum for the flat planning engagement, which is how most households begin.
+                Ongoing portfolio management generally starts at $500,000, and we deliberately cap each adviser at 60
+                relationships so the work stays personal.</p>
+            </div>
+          </details>
+        </div>
+        <p class="about__fineprint">Answers are illustrative placeholders for this demonstration site.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════ 8. CONTACT ═══════════════ -->
+    <section class="section section--contact" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Get in touch</p>
+          <h2 class="section__title" id="contactTitle">Start a conversation</h2>
+          <p class="section__sub">Questions about our fee, our process, or whether we are the right fit? Write to us — a
+            partner reads every message.</p>
+        </header>
+
+        <div class="contact reveal">
+          <form class="contact__form" id="contactForm" novalidate>
+            <!-- Placeholder endpoint — swap for Formspree, Netlify Forms or your own backend
+             action="https://formspree.io/f/YOUR_FORM_ID" method="POST"  |  or add: data-netlify="true" -->
+            <div class="contact__row">
+              <div class="field">
+                <label for="cName">Full name <span class="req" aria-hidden="true">*</span></label>
+                <div class="field__wrap"><input type="text" id="cName" name="name" autocomplete="name"
+                    placeholder="Alexandra Reyes" required></div>
+                <p class="field__msg" id="cNameMsg"></p>
+              </div>
+              <div class="field">
+                <label for="cEmail">Email <span class="req" aria-hidden="true">*</span></label>
+                <div class="field__wrap"><input type="email" id="cEmail" name="email" autocomplete="email"
+                    placeholder="you@example.com" required></div>
+                <p class="field__msg" id="cEmailMsg"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="cSubject">Subject <span class="req" aria-hidden="true">*</span></label>
+              <div class="field__wrap field__wrap--select">
+                <select id="cSubject" name="subject" required>
+                  <option value="">Choose a subject…</option>
+                  <option value="New client enquiry">New client enquiry</option>
+                  <option value="Fees and engagement">Fees and engagement</option>
+                  <option value="Existing client support">Existing client support</option>
+                  <option value="Media or speaking">Media or speaking</option>
+                  <option value="Careers">Careers</option>
+                </select>
+                <i class="ph ph-caret-down field__caret" aria-hidden="true"></i>
+              </div>
+              <p class="field__msg" id="cSubjectMsg"></p>
+            </div>
+
+            <div class="field">
+              <label for="cMessage">Message <span class="req" aria-hidden="true">*</span></label>
+              <div class="field__wrap"><textarea id="cMessage" name="message" rows="5"
+                  placeholder="Tell us a little about your situation and what you would like to solve."
+                  required></textarea></div>
+              <p class="field__msg" id="cMessageMsg"></p>
+            </div>
+
+            <div class="field field--check">
+              <label class="check" for="cConsent">
+                <input type="checkbox" id="cConsent" name="consent" required>
+                <span class="check__box" aria-hidden="true"><i class="ph ph-check"></i></span>
+                <span class="check__text">I consent to Meridian &amp; Vale storing this enquiry in order to reply. <span
+                    class="req" aria-hidden="true">*</span></span>
+              </label>
+              <p class="field__msg" id="cConsentMsg"></p>
+            </div>
+
+            <div class="form__foot">
+              <button class="btn btn--primary" type="submit">Send message<i class="ph ph-arrow-right"
+                  aria-hidden="true"></i></button>
+              <p class="secure-badge"><i class="ph ph-lock-key" aria-hidden="true"></i> Secure connection</p>
+            </div>
+            <p class="form__success" id="contactSuccess" role="status" hidden><i class="ph ph-check-circle"
+                aria-hidden="true"></i> <span>Thank you — your message has been received. A partner will reply within
+                one business day.</span></p>
+          </form>
+
+          <aside class="contact__aside">
+            <ul class="contact__details">
+              <li><span class="contact__ico"><i class="ph ph-map-pin"
+                    aria-hidden="true"></i></span><span><strong>Office</strong>1180 Kearny Street, Suite 400<br>San
+                  Francisco, CA 94133</span></li>
+              <li><span class="contact__ico"><i class="ph ph-phone"
+                    aria-hidden="true"></i></span><span><strong>Telephone</strong><a href="tel:+14155550148">(415)
+                    555-0148</a></span></li>
+              <li><span class="contact__ico"><i class="ph ph-envelope-simple"
+                    aria-hidden="true"></i></span><span><strong>Email</strong><a
+                    href="mailto:advice@meridianvale.example">advice@meridianvale.example</a></span></li>
+              <li><span class="contact__ico"><i class="ph ph-clock"
+                    aria-hidden="true"></i></span><span><strong>Hours</strong>Mon–Fri, 8:30am–5:30pm PT</span></li>
+            </ul>
+
+            <!-- Google Maps embed — swap the q= value for your own address -->
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps?q=1180%20Kearny%20Street%2C%20San%20Francisco%2C%20CA%2094133&amp;z=15&amp;output=embed"
+                title="Map showing the Meridian &amp; Vale office at 1180 Kearny Street, San Francisco" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+
+            <ul class="socials" aria-label="Social profiles">
+              <li><a href="#contact" aria-label="Meridian and Vale on LinkedIn"><i class="ph ph-linkedin-logo"
+                    aria-hidden="true"></i></a></li>
+              <li><a href="#contact" aria-label="Meridian and Vale on X"><i class="ph ph-x-logo"
+                    aria-hidden="true"></i></a></li>
+              <li><a href="#contact" aria-label="Meridian and Vale on Instagram"><i class="ph ph-instagram-logo"
+                    aria-hidden="true"></i></a></li>
+              <li><a href="#contact" aria-label="Meridian and Vale newsletter"><i class="ph ph-paper-plane-tilt"
+                    aria-hidden="true"></i></a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════ 9. FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="nav__logo footer__logo" href="#home" aria-label="Meridian and Vale — back to top">
+            <span class="nav__mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="26" height="26" focusable="false">
+                <path d="M4 25 L11 8 L16 19 L21 8 L28 25" fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle cx="16" cy="26.6" r="1.5" fill="currentColor"></circle>
+              </svg>
+            </span>
+            <span class="nav__word">Meridian<em>&amp;</em>Vale</span>
+          </a>
+          <p class="footer__blurb">A fee-only fiduciary advisory practice. Planning for families and founders who
+            measure in decades.</p>
+          <ul class="socials socials--footer" aria-label="Social profiles">
+            <li><a href="#contact" aria-label="Meridian and Vale on LinkedIn"><i class="ph ph-linkedin-logo"
+                  aria-hidden="true"></i></a></li>
+            <li><a href="#contact" aria-label="Meridian and Vale on X"><i class="ph ph-x-logo"
+                  aria-hidden="true"></i></a></li>
+            <li><a href="#contact" aria-label="Meridian and Vale on Instagram"><i class="ph ph-instagram-logo"
+                  aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
+        <nav class="footer__col" aria-label="Footer section links">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#booking">Book a Call</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#trust">Trust</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h4>Office</h4>
+          <ul class="footer__plain">
+            <li>1180 Kearny Street, Suite 400<br>San Francisco, CA 94133</li>
+            <li><a href="tel:+14155550148">(415) 555-0148</a></li>
+            <li><a href="mailto:advice@meridianvale.example">advice@meridianvale.example</a></li>
+            <li>Mon–Fri, 8:30am–5:30pm PT</li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--news">
+          <h4>Quarterly letter</h4>
+          <p class="footer__news-copy">One considered note each quarter on planning, markets and tax. No promotions.</p>
+          <!-- Mailchimp embed placeholder — paste your audience form markup/action here -->
+          <form class="footer__news" id="newsForm" novalidate>
+            <label class="sr-only" for="newsEmail">Email address</label>
+            <input type="email" id="newsEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
+            <button class="btn btn--primary" type="submit" aria-label="Subscribe to the quarterly letter"><i
+                class="ph ph-arrow-right" aria-hidden="true"></i></button>
+          </form>
+          <p class="field__msg" id="newsMsg"></p>
+        </div>
+      </div>
+
+      <p class="footer__disclosure">Meridian &amp; Vale is a placeholder financial services brand created for
+        demonstration purposes. It is not a real financial institution, is not a registered investment adviser, and
+        nothing on this page is investment, tax or legal advice. All figures, credentials, testimonials and calculator
+        outputs are illustrative estimates. Investing involves risk, including possible loss of principal; past
+        performance does not guarantee future results.</p>
+
+      <div class="footer__base">
+        <p>© <span id="year">2026</span> Meridian &amp; Vale. All rights reserved.</p>
+        <ul class="footer__legal">
+          <li><a href="#trust">Form ADV</a></li>
+          <li><a href="#trust">Privacy notice</a></li>
+          <li><a href="#trust">Disclosures</a></li>
+        </ul>
       </div>
     </div>
+  </footer>
 
-    <p class="footer__disclosure">Meridian &amp; Vale is a placeholder financial services brand created for demonstration purposes. It is not a real financial institution, is not a registered investment adviser, and nothing on this page is investment, tax or legal advice. All figures, credentials, testimonials and calculator outputs are illustrative estimates. Investing involves risk, including possible loss of principal; past performance does not guarantee future results.</p>
-
-    <div class="footer__base">
-      <p>© <span id="year">2026</span> Meridian &amp; Vale. All rights reserved.</p>
-      <ul class="footer__legal">
-        <li><a href="#trust">Form ADV</a></li>
-        <li><a href="#trust">Privacy notice</a></li>
-        <li><a href="#trust">Disclosures</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
-
-<!-- ═══════════════ SERVICE DETAIL MODAL (inline detail view — not a route) ═══════════════ -->
-<div class="modal" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
-  <div class="modal__backdrop" data-modal-close></div>
-  <div class="modal__panel" role="document">
-    <button class="icon-btn modal__close" id="modalClose" type="button" aria-label="Close details"><i class="ph ph-x" aria-hidden="true"></i></button>
-    <!-- src/alt are set from the service data when the modal opens; a transparent
+  <!-- ═══════════════ SERVICE DETAIL MODAL (inline detail view — not a route) ═══════════════ -->
+  <div class="modal" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__panel" role="document">
+      <button class="icon-btn modal__close" id="modalClose" type="button" aria-label="Close details"><i class="ph ph-x"
+          aria-hidden="true"></i></button>
+      <!-- src/alt are set from the service data when the modal opens; a transparent
          1x1 keeps the initial markup valid without firing a request -->
-    <figure class="modal__media"><img id="modalImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" width="900" height="420" decoding="async"></figure>
-    <p class="eyebrow modal__eyebrow" id="modalCat">Retirement</p>
-    <h3 class="modal__title" id="modalTitle">Service</h3>
-    <p class="modal__lede" id="modalLede"></p>
+      <figure class="modal__media"><img id="modalImg"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" width="900"
+          height="420" decoding="async"></figure>
+      <p class="eyebrow modal__eyebrow" id="modalCat">Retirement</p>
+      <h3 class="modal__title" id="modalTitle">Service</h3>
+      <p class="modal__lede" id="modalLede"></p>
 
-    <div class="modal__body">
-      <section class="modal__block">
-        <h4>Our approach</h4>
-        <ul class="ticklist" id="modalApproach"></ul>
-      </section>
-      <section class="modal__block">
-        <h4>Who leads it</h4>
-        <p id="modalLead"></p>
-      </section>
-      <section class="modal__block">
-        <h4>Sample outcome</h4>
-        <p id="modalOutcome"></p>
-      </section>
-      <section class="modal__block">
-        <h4>Engagement &amp; pricing</h4>
-        <p id="modalPricing"></p>
-      </section>
-    </div>
+      <div class="modal__body">
+        <section class="modal__block">
+          <h4>Our approach</h4>
+          <ul class="ticklist" id="modalApproach"></ul>
+        </section>
+        <section class="modal__block">
+          <h4>Who leads it</h4>
+          <p id="modalLead"></p>
+        </section>
+        <section class="modal__block">
+          <h4>Sample outcome</h4>
+          <p id="modalOutcome"></p>
+        </section>
+        <section class="modal__block">
+          <h4>Engagement &amp; pricing</h4>
+          <p id="modalPricing"></p>
+        </section>
+      </div>
 
-    <p class="disclaimer disclaimer--sm"><i class="ph ph-info" aria-hidden="true"></i> <span>Sample outcomes and pricing are illustrative placeholders. They are not a quotation, a projection of results, or financial advice.</span></p>
+      <p class="disclaimer disclaimer--sm"><i class="ph ph-info" aria-hidden="true"></i> <span>Sample outcomes and
+          pricing are illustrative placeholders. They are not a quotation, a projection of results, or financial
+          advice.</span></p>
 
-    <div class="modal__foot">
-      <button class="btn btn--primary" type="button" id="modalCta">Book a call about this<i class="ph ph-arrow-right" aria-hidden="true"></i></button>
-      <button class="btn btn--quiet" type="button" data-modal-close>Close</button>
+      <div class="modal__foot">
+        <button class="btn btn--primary" type="button" id="modalCta">Book a call about this<i class="ph ph-arrow-right"
+            aria-hidden="true"></i></button>
+        <button class="btn btn--quiet" type="button" data-modal-close>Close</button>
+      </div>
     </div>
   </div>
-</div>
 
-<script src="assets/js/calculator.js"></script>
-<script src="assets/js/main.js"></script>
+  <!-- ═══════════════ BACK TO TOP ═══════════════ -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" title="Back to top">
+    <i class="ph ph-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="assets/js/calculator.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
