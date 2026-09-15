@@ -39,6 +39,7 @@
   --fs-h1:   clamp(2.6rem, 1.55rem + 3.4vw, 4.4rem);
   --fs-h2:   clamp(1.95rem, 1.45rem + 1.7vw, 2.9rem);
   --fs-h3:   clamp(1.2rem, 1.1rem + 0.3vw, 1.4rem);
+  --fs-subhead: clamp(1.45rem, 1.25rem + 0.7vw, 1.9rem);
   --fs-h4:   1.0625rem;
   --fs-lede: clamp(1.0625rem, 1rem + 0.4vw, 1.25rem);
   --fs-body: 1.0625rem;
@@ -166,6 +167,17 @@ h2 { font-size: var(--fs-h2); font-weight: var(--fw-h2); line-height: var(--lh-h
 h3 { font-size: var(--fs-h3); font-weight: var(--fw-h3); line-height: var(--lh-head); letter-spacing: -0.008em; }
 h4 { font-size: var(--fs-h4); font-weight: var(--fw-h3); line-height: var(--lh-head); }
 
+/* Shared sub-section headings (About team, testimonials, FAQ) — identical size everywhere */
+.about__team-title,
+.trust__sub-title {
+  font-size: var(--fs-subhead);
+  font-weight: var(--fw-h2);
+  line-height: var(--lh-head);
+  letter-spacing: -0.012em;
+  text-align: center;
+  margin-bottom: var(--s-6);
+}
+
 .eyebrow {
   font-family: var(--font-body);
   font-size: var(--fs-xs);
@@ -178,7 +190,7 @@ h4 { font-size: var(--fs-h4); font-weight: var(--fw-h3); line-height: var(--lh-h
 .section { padding-block: var(--section-y); }
 
 /* Alternating surface bands, in scroll order:
-   hero → approach (alt) → services → planner (alt) → booking → about → trust (alt) → contact */
+   hero → approach (alt) → services → planner (alt) → about → trust (alt) → booking → contact */
 .section--services,
 .section--booking,
 .section--about,
@@ -765,7 +777,7 @@ h4 { font-size: var(--fs-h4); font-weight: var(--fw-h3); line-height: var(--lh-h
 }
 .timeline p { font-size: var(--fs-xs); color: var(--ink-soft); }
 
-.about__team-title { text-align: center; margin-top: clamp(48px, 6vw, 88px); margin-bottom: var(--s-6); }
+.about__team-title { margin-top: clamp(48px, 6vw, 88px); }
 .team { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-4); }
 .member {
   display: flex; flex-direction: column; align-items: center; text-align: center;
@@ -799,7 +811,7 @@ h4 { font-size: var(--fs-h4); font-weight: var(--fw-h3); line-height: var(--lh-h
 .t-card h3 { margin-bottom: var(--s-3); }
 .t-card p { color: var(--ink-soft); font-size: var(--fs-sm); }
 
-.trust__sub-title { text-align: center; margin-top: clamp(56px, 7vw, 96px); margin-bottom: var(--s-6); }
+.trust__sub-title { margin-top: clamp(56px, 7vw, 96px); }
 .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-4); }
 .quote {
   display: flex; flex-direction: column; align-items: center; text-align: center;

@@ -116,8 +116,9 @@
   const SPY = [
     ['home', '#home'], ['approach', '#home'],
     ['services', '#services'], ['planner', '#services'],
-    ['booking', '#booking'], ['about', '#about'],
-    ['trust', '#trust'], ['contact', '#contact']
+    ['about', '#about'], ['trust', '#trust'],
+    ['faq', '#faq'], ['booking', '#faq'],
+    ['contact', '#contact']
   ].map(([id, link]) => ({ el: document.getElementById(id), link })).filter((s) => s.el);
 
   const navLinks = $$('.nav__link');
